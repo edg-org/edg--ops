@@ -18,12 +18,6 @@ on:
 jobs:
   build-and-push-image:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-    needs: build-and-test-app
-    environment:
-      name: docker
 
     steps:
       - name: Checkout repository
